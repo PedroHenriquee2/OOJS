@@ -1,3 +1,16 @@
+class Pc {
+    constructor(processador, placaMae, memoria, gabinete){
+        this.processador = processador;
+        this.placaMae = placaMae;
+        this.memoria = memoria;
+        this.gabinete = gabinete;
+    }
+
+    ligar() {
+        console.log("ligar");
+    }
+}
+
 const pcDoPedro = {
     processador: 'Ryzen 5 5600',
     placaMae: 'B550',
@@ -18,21 +31,15 @@ const pcDoJoao = {
     }
 }
 
-function Pc(processador, placaMae, memoria, gabinete) {
-    this.processador = processador;
-    this.placaMae = placaMae;
-    this.memoria = memoria;
-    this.gabinete = gabinete;
-    this.ligar = function() {
-        console.log("ligar");
-    }
-}
+
 
 const pcDoPedro2 = new Pc("Ryzen 5 5600", "B550", "DDR4", "ATX");
 const pcDoJoao2 = new Pc("Ryzen 7 5800", "X570", "DDR4", "ATX");
+const pcDoMaria = new Pc("Ryzen 9 5900", "X570", "DDR4", "ATX");
 
 console.log(pcDoPedro2);
 console.log(pcDoJoao2);
+console.log(pcDoMaria);
 
 const nome = "Pedro"
 const idade = 22
